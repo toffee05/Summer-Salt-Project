@@ -1,0 +1,68 @@
+@import "index.css";
+
+#header2 {
+	font-family: 'nowregular';
+	font-size: 30px;
+}
+
+#albumCoverCont {
+	height: 300px;
+	text-align: center;
+}
+
+#albumCover {
+	display: inline-block;
+	height: 100%;
+	border-radius: 40px;
+	border: 8px solid #101012;
+}
+
+#header3 {
+	text-align: center;
+	color: #131313;
+	font-size: 5vh;
+	font-family: 'nowmedium';
+	letter-spacing: 1.5px;
+}
+
+#song {
+	position: relative;
+	width: 80vw;
+	height: 120px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#songNum {
+	font-size: 15px;
+}
+
+#title {
+	position: absolute;
+	left: 15px;
+	font-family: 'nowmedium';
+	font-size: 20px;
+}
+
+#duration {
+	position: absolute;
+	right: 330px;
+	font-family: 'nowmedium';
+	font-size: 15px;
+}
+
+#preview {
+	position: absolute;
+	right: 15px;
+	font-family: 'nowmedium';
+	font-size: 25px;
+}
+
+#separator {
+	margin: auto;
+	width: 80vw;
+	height: 5px;
+	background-color: #232323;
+}
