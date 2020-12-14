@@ -6,8 +6,32 @@
 		<meta name="author" content="Christopher Allen Abit">
 		<meta name="keywords" content="Summer Salt, Alternative, Indie, Driving to Hawaii, Going Native, So Polite, Happy Camper, Honeyweed, Avenue G">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="index.css" type="text/css" rel="stylesheet">
-		<script src="index.js"></script>
+		<link href="css/index.css" type="text/css" rel="stylesheet">
+		<script>
+			var navToggled = 0;
+
+			function toggleNav() {
+				if (navToggled == 0) {
+					openNav();
+					navToggled = 1;
+				} else {
+					closeNav();
+					navToggled = 0;
+				}
+			}
+
+			function openNav() {
+				document.getElementById("mySidebar").style.width = "18%";
+				document.getElementById("main").style.marginLeft = "18%";
+				document.getElementById("abContent").style.width = "64%";
+			}
+
+			function closeNav() {
+				document.getElementById("mySidebar").style.width = "0";
+				document.getElementById("main").style.marginLeft= "0";
+				document.getElementById("abContent").style.width = "70%";
+			}
+		</script>
 	</head>
 	<body id="main">
 		<div class="sidebar" id="mySidebar">
@@ -36,7 +60,7 @@
 			
 			<div id="aboutSec">
 					<a href="https://s9.limitedrun.com/images/1344350/summer_salt_press_1.jpg" target="_blank">
-						<img src="../images/summerSalt.jpg" alt="Summer Salt Members" id="aboutImg">
+						<img src="images/summerSalt.jpg" alt="Summer Salt Members" id="aboutImg">
 						<p id="abImgSrc">(Click to Direct to Source)</p>
 					</a>
 				<a href="#about">
@@ -62,7 +86,7 @@
 			</div>
 			<div id="drivToHawSec">
 				<a href="https://s9.limitedrun.com/images/1355291/Summer_Salt_-_Driving_to_Hawaii__1_.jpg" target="_blank">
-					<img src="../images/drivToHaw.jpg" alt="Driving to Hawaii Album Cover" id="drivToHawImg">
+					<img src="images/drivToHaw.jpg" alt="Driving to Hawaii Album Cover" id="drivToHawImg">
 					<p id="dthImgSrc">(Click to Direct to Source)</p>
 				</a>
 				<a href="#drivToHaw">
@@ -95,14 +119,14 @@
 					</div>
 				</a>
 				<a href="https://cdn2.albumoftheyear.org/345x/album/180941-going-native.jpg" target="_blank">
-					<img src="../images/goingNat.jpg" alt="Going Native Album Cover" id="goingNatImg">
+					<img src="images/goingNat.jpg" alt="Going Native Album Cover" id="goingNatImg">
 					<p id="gnImgSrc">(Click to Direct to Source)</p>
 				</a>
 			</div>
 
 			<div id="soPolSec">
 				<a href="https://f4.bcbits.com/img/a1266503095_10.jpg" target="_blank">
-					<img src="../images/soPol.jpg" alt="So Polite Album Cover" id="soPolImg">
+					<img src="images/soPol.jpg" alt="So Polite Album Cover" id="soPolImg">
 					<p id="spImgSrc">(Click to Direct to Source)</p>
 				</a>
 				<a href="#soPol">
@@ -136,14 +160,14 @@
 					</div>
 				</a>
 				<a href="https://images.genius.com/899fd938a8ece079d216032836168156.1000x1000x1.jpg" target="_blank">
-					<img src="../images/happyCamper.jpg" alt="Happy Camper Album Cover" id="hapCamImg">
+					<img src="images/happyCamper.jpg" alt="Happy Camper Album Cover" id="hapCamImg">
 					<p id="hcImgSrc">(Click to Direct to Source)</p>
 				</a>
 			</div>
 			
 			<div id="honeyweedSec">
 				<a href="https://f4.bcbits.com/img/a3973966682_10.jpg" target="_blank">
-					<img src="../images/honeyweed.jpg" alt="Honeyweed Album Cover" id="honeyweedImg">
+					<img src="images/honeyweed.jpg" alt="Honeyweed Album Cover" id="honeyweedImg">
 					<p id="hwImgSrc">(Click to Direct to Source)</p>
 				</a>
 				<a href="#honeyweed">
@@ -175,7 +199,7 @@
 					</div>
 				</a>
 				<a href="https://f4.bcbits.com/img/a0696540022_10.jpg" target="_blank">
-					<img src="../images/avenueG.jpg" alt="Avenue G Album Cover" id="avenueGImg">
+					<img src="images/avenueG.jpg" alt="Avenue G Album Cover" id="avenueGImg">
 					<p id="agImgSrc">(Click to Direct to Source)</p>
 				</a>
 			</div>

@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'nowblack';
-    src: url('fonts/now-black-webfont.woff2') format('woff2'),
-         url('fonts/now-black-webfont.woff') format('woff');
+    src: url('../mmfiles/fonts/now-black-webfont.woff2') format('woff2'),
+         url('../mmfiles/fonts/now-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'nowmedium';
-    src: url('fonts/now-medium-webfont.woff2') format('woff2'),
-         url('fonts/now-medium-webfont.woff') format('woff');
+    src: url('../mmfiles/fonts/now-medium-webfont.woff2') format('woff2'),
+         url('../mmfiles/fonts/now-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'nowregular';
-    src: url('fonts/now-regular-webfont.woff2') format('woff2'),
-         url('fonts/now-regular-webfont.woff') format('woff');
+    src: url('../mmfiles/fonts/now-regular-webfont.woff2') format('woff2'),
+         url('../mmfiles/fonts/now-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
