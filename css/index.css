@@ -74,7 +74,7 @@ a {
 	display: block;
 	text-align: center;
 	font-family: 'nowmedium';
-	font-size: 18px;
+	font-size: 1.3vw;
 	text-decoration: none;
 	transition: color .07s;
 	color: #CCCCCC;
@@ -255,16 +255,15 @@ a {
 
 
 #drivToHawSec {
-	display: flex;
+	display: inline-block;
 	position: relative;
-	width: 1020px;
-	margin: auto;
+	height: 220px;
 	margin-bottom: 40px;
 }
 
 #drivToHawImg {
 	float: left;
-	min-width: 270px;
+	height: 400px;
 }
 
 #dthImgSrc {
@@ -291,17 +290,19 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 750px;
-	height: 270px;
+	width: 63vw;
+	height: 400px;
 	float: left;
 	margin: 0;
 	background-color: #1F1F1F;
+	overflow: hidden;
 }
 
 #dthContent p {
 	margin: 40px;
 	text-align: justify;
 	font-family: 'nowregular';
+	font-size: 1vw;
 	color: white;
 }
 

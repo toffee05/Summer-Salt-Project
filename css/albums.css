@@ -6,14 +6,13 @@
 }
 
 #albumCoverCont {
-	height: 300px;
+	height: 23.5vw;
 	text-align: center;
 }
 
 #albumCover {
 	display: inline-block;
-	height: 100%;
-	border-radius: 40px;
+	border-radius: 4vw;
 	border: 8px solid #101012;
 }
 
@@ -58,6 +57,7 @@
 	right: 15px;
 	font-family: 'nowmedium';
 	font-size: 25px;
+	border-radius: 4px;
 }
 
 #separator {
