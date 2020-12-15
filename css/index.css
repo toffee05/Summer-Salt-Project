@@ -256,6 +256,7 @@ a {
 
 #drivToHawSec {
 	display: inline-block;
+	text-align: center;
 	position: relative;
 	height: 220px;
 	margin-bottom: 40px;
@@ -263,7 +264,8 @@ a {
 
 #drivToHawImg {
 	float: left;
-	height: 400px;
+	max-height: 220px;
+	height: 220px;
 }
 
 #dthImgSrc {
@@ -286,16 +288,42 @@ a {
 	opacity: 1;
 }
 
+#dthBreak {
+	display: none;
+}
+
 #dthContent {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 63vw;
-	height: 400px;
+	min-width: 160px;
+	width: 50vw;
+	max-height: 220px;
+	height: 220px;
 	float: left;
 	margin: 0;
 	background-color: #1F1F1F;
 	overflow: hidden;
+	transition: width .1s;
+}
+
+@media screen and (max-width: 500px) {
+	#dthContent {
+		display: inline-block;
+	}
+	
+	#dthBreak {
+		display: block;
+	}
+	
+	#drivToHawImg {
+		display: block;
+		width: 50vw;
+	}
+	
+	#drivToHawSec {
+		height: 440px;
+	}
 }
 
 #dthContent p {
