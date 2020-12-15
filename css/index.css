@@ -164,6 +164,7 @@ a {
 	display: inline-block;
 	float: left;
 	min-width: 440px;
+	width: 440px;
 	max-height: 440px;
 	height: 440px;
 	margin-left: -440px;
@@ -174,7 +175,7 @@ a {
 	position: absolute;
 	bottom: 0;
 	left:0;
-	width: 220px;
+	width: 440px;
 	height: 40px;
 	text-align: center;
 	font-family: 'nowregular';
@@ -199,7 +200,7 @@ a {
 	justify-content: center;
 	align-items: center;
 	min-width: 160px;
-	width: auto;
+	width: 100%;
 	max-height: 440px;
 	height: 440px;
 	float: left;
@@ -210,42 +211,42 @@ a {
 }
 
 #abContent p {
-	margin: 20px;
+	margin: 40px;
 	text-align: justify;
 	font-family: 'nowregular';
-	font-size: calc(7px + .5vw);
+	font-size: calc(12px + .5vw);
 	color: white;
 }
 
 @media screen and (max-width: 738px) {
 	#abContent {
-		display: inline-block;
-		margin-top: 440px;
 		height: 440px;
+		width: 100%;
 	}
-	
-	#abBreak {
-		display: block;
-	}
+
 	
 	#aboutImg {
 		display: block;
-		height: 440px;
+		width: 100%;
+		max-height: auto;
+		min-height: 100vw;
+		height: 100vw;
+		margin: 0;
 	}
 	
 	#abImgSrc {
-		width: 50vw;
-		top: 180px;
+		width: 100%;
+		bottom: 440px;
 	}
 	
 	#aboutSec {
-		height: 880px;
+		height: auto;
 		padding: 0;
 	}
 	
 	#abContent p {
-		margin: 13px;
-		margin-top: 2px;
+		margin: 60px;
+		font-size: calc(13px + .8vw);
 	}
 }
 
@@ -258,28 +259,30 @@ a {
 
 #line {
 	background-color: #1f2024;
-	height: 30px;
-	width: 30%;
+	height: 15px;
+	width: 26vw;
 	border-radius: 15px;
 	position: absolute;
 	top: 50%;
-	left: 40px;
+	left: 8vw;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
+	transition: width .5s;
 }
 
 #line2 {
 	background-color: #1f2024;
-	height: 30px;
-	width: 30%;
+	height: 15px;
+	width: 26vw;
 	border-radius: 15px;
 	position: absolute;
 	top: 50%;
-	right: 40px;
+	right: 8vw;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
+	transition: width .5s;
 }
 
 #header3 {
@@ -367,10 +370,6 @@ a {
 }
 
 @media screen and (max-width: 538px) {
-	#dthContent {
-		display: inline-block;
-	}
-	
 	#dthBreak {
 		display: block;
 	}
@@ -391,11 +390,6 @@ a {
 	
 	#dthContent p {
 		margin: 13px;
-		margin-top: 2px;
-	}
-	
-	#contentHeader {
-		letter-spacing: 1px;
 	}
 }
 
@@ -462,10 +456,6 @@ a {
 }
 
 @media screen and (max-width: 538px) {
-	#gnContent {
-		display: inline-block;
-	}
-	
 	#gnBreak {
 		display: block;
 	}
@@ -486,11 +476,6 @@ a {
 	
 	#gnContent p {
 		margin: 13px;
-		margin-top: 38px;
-	}
-	
-	#contentHeader {
-		letter-spacing: 1px;
 	}
 }
 
@@ -557,10 +542,6 @@ a {
 }
 
 @media screen and (max-width: 538px) {
-	#spContent {
-		display: inline-block;
-	}
-	
 	#spBreak {
 		display: block;
 	}
@@ -581,11 +562,6 @@ a {
 	
 	#spContent p {
 		margin: 16px;
-		margin-top: 10px;
-	}
-	
-	#contentHeader {
-		letter-spacing: 1px;
 	}
 }
 
@@ -652,10 +628,6 @@ a {
 }
 
 @media screen and (max-width: 538px) {
-	#hcContent {
-		display: inline-block;
-	}
-	
 	#hcBreak {
 		display: block;
 	}
@@ -676,11 +648,6 @@ a {
 	
 	#hcContent p {
 		margin: 13px;
-		margin-top: 38px;
-	}
-	
-	#contentHeader {
-		letter-spacing: 1px;
 	}
 }
 
@@ -747,10 +714,6 @@ a {
 }
 
 @media screen and (max-width: 538px) {
-	#hwContent {
-		display: inline-block;
-	}
-	
 	#hwBreak {
 		display: block;
 	}
@@ -771,11 +734,6 @@ a {
 	
 	#hwContent p {
 		margin: 13px;
-		margin-top: 30px;
-	}
-	
-	#contentHeader {
-		letter-spacing: 1px;
 	}
 }
 
@@ -842,10 +800,6 @@ a {
 }
 
 @media screen and (max-width: 538px) {
-	#agContent {
-		display: inline-block;
-	}
-	
 	#agBreak {
 		display: block;
 	}
@@ -866,7 +820,6 @@ a {
 	
 	#agContent p {
 		margin: 13px;
-		margin-top: 22px;
 	}
 	
 	#contentHeader {
