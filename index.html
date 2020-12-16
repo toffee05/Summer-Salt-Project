@@ -7,60 +7,8 @@
 		<meta name="keywords" content="Summer Salt, Alternative, Indie, Driving to Hawaii, Going Native, So Polite, Happy Camper, Honeyweed, Avenue G">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="css/index.css" type="text/css" rel="stylesheet">
-		<script>
-			var navToggled = 0;
-
-			function toggleNav() {
-				if (navToggled == 0) {
-					openNav();
-					navToggled = 1;
-				} else {
-					closeNav();
-					navToggled = 0;
-				}
-			}
-
-			function openNav() {
-				document.getElementById("mySidebar").style.width = "22%";
-				document.getElementById("main").style.marginLeft = "22%";
-				document.getElementById("line").style.width = "18vw";
-				document.getElementById("line2").style.width = "18vw";
-			}
-
-			function closeNav() {
-				document.getElementById("mySidebar").style.width = "0";
-				document.getElementById("main").style.marginLeft= "0";
-				document.getElementById("line").style.width = "26vw";
-				document.getElementById("line2").style.width = "26vw";
-			}
-		</script>
-		<script>
-			var spriteToggled = 0;
-
-			function toggleSprite() {
-				if (spriteToggled == 0) {
-					openSprite();
-					spriteToggled = 1;
-				} else {
-					closeSprite();
-					spriteToggled = 0;
-				}
-			}
-
-			function openSprite() {
-				document.getElementById("sprite").style.maxHeight = "200px";
-				document.getElementById("sprite").style.borderRadius = "0 0 30px 30px";
-				document.getElementById("spriteSubCont").style.borderRadius = "0 0 30px 30px";
-				document.getElementById("openbtnSprite").style.borderRadius = "0 0 0 0";
-			}
-
-			function closeSprite() {
-				document.getElementById("sprite").style.maxHeight = "0";
-				document.getElementById("sprite").style.borderRadius = "15px 0 30px 30px";
-				document.getElementById("spriteSubCont").style.borderRadius = "15px 0 30px 30px";
-				document.getElementById("openbtnSprite").style.borderRadius = "0 0 0 15px";
-			}
-		</script>
+		<script src="mmfiles/navbar.js"></script>
+		<script src="mmfiles/sprite.js"></script>
 	</head>
 	<body id="main">
 		<div class="sidebar" id="mySidebar">
@@ -69,12 +17,12 @@
 			<div class="dropdown">
 				<a id="dropbtn">Albums</a>
 				<div class="dropdown-content">
-					<a href="#drivToHawSec">Driving<br class="break"> to Hawaii</a>
-					<a href="#goingNat">Going<br class="break">  Native</a>
-					<a href="#soPol">So<br class="break">  Polite</a>
-					<a href="#happyCamper">Happy<br class="break">  Camper</a>
-					<a href="#honeyweed">Honeyweed</a>
-					<a id="avenueG" href="htdocs/avenueG.html">Avenue G</a>
+					<a href="htdocs/drivToHaw.html">Driving<br class="break"> to Hawaii</a>
+					<a href="htdocs/goingNat.html">Going<br class="break">  Native</a>
+					<a href="htdocs/soPol.html">So<br class="break">  Polite</a>
+					<a href="htdocs/happyCamper.html">Happy<br class="break">  Camper</a>
+					<a href="htdocs/honeyweed.html">Honeyweed</a>
+					<a href="htdocs/avenueG.html">Avenue G</a>
 				</div>
 			</div>
 		</div>
@@ -129,7 +77,7 @@
 					<p id="dthImgSrc">(Click to Direct to Source)</p>
 				</a>
 				<br id="dthBreak">
-				<a href="#drivToHaw">
+				<a href="htdocs/drivToHaw.html">
 					<div id="dthContent">
 						<p>
 							<span id="contentHeader">DRIVING TO HAWAII</span>
@@ -146,7 +94,7 @@
 			</div>
 			
 			<div id="goingNatSec">
-				<a href="#goingNat">
+				<a href="htdocs/goingNat.html">
 					<div id="gnContent">
 						<p>
 							<span id="contentHeader">GOING NATIVE</span>
@@ -171,7 +119,7 @@
 					<p id="spImgSrc">(Click to Direct to Source)</p>
 				</a>
 				<br id="spBreak">
-				<a href="#soPol">
+				<a href="htdocs/soPol.html">
 					<div id="spContent">
 						<p>
 							<span id="contentHeader">SO POLITE</span>
@@ -188,7 +136,7 @@
 			</div>
 
 			<div id="hapCamSec">
-				<a href="#happyCamper">
+				<a href="htdocs/happyCamper.html">
 					<div id="hcContent">
 						<p>
 							<span id="contentHeader">HAPPY CAMPER</span>
@@ -214,7 +162,7 @@
 					<p id="hwImgSrc">(Click to Direct to Source)</p>
 				</a>
 				<br id="hwBreak">
-				<a href="#honeyweed">
+				<a href="htdocs/honeyweed.html">
 					<div id="hwContent">
 						<p>
 							<span id="contentHeader">HONEYWEED</span>
