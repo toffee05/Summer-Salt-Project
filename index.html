@@ -34,6 +34,33 @@
 				document.getElementById("line2").style.width = "26vw";
 			}
 		</script>
+		<script>
+			var spriteToggled = 0;
+
+			function toggleSprite() {
+				if (spriteToggled == 0) {
+					openSprite();
+					spriteToggled = 1;
+				} else {
+					closeSprite();
+					spriteToggled = 0;
+				}
+			}
+
+			function openSprite() {
+				document.getElementById("sprite").style.maxHeight = "200px";
+				document.getElementById("sprite").style.borderRadius = "0 0 30px 30px";
+				document.getElementById("spriteSubCont").style.borderRadius = "0 0 30px 30px";
+				document.getElementById("openbtnSprite").style.borderRadius = "0 0 0 0";
+			}
+
+			function closeSprite() {
+				document.getElementById("sprite").style.maxHeight = "0";
+				document.getElementById("sprite").style.borderRadius = "15px 0 30px 30px";
+				document.getElementById("spriteSubCont").style.borderRadius = "15px 0 30px 30px";
+				document.getElementById("openbtnSprite").style.borderRadius = "0 0 0 15px";
+			}
+		</script>
 	</head>
 	<body id="main">
 		<div class="sidebar" id="mySidebar">
@@ -55,6 +82,15 @@
 			SUMMER SALT |
 		</div>
 		<button class="openbtn" onclick="toggleNav()">☰</button>
+		
+		<button class="openbtnSprite" id="openbtnSprite" onclick="toggleSprite()">&#9661 </button>
+		<aside id="sprite">
+			<div class="socMedSprite" id="spriteSubCont">
+				<a class="youtube" href="https://www.youtube.com/channel/UCs4nrDXLuNz6NuCDKUS8FIQ" target="_blank"></a>
+				<a class="twitter" href="https://twitter.com/SummerSaltATX" target="_blank"></a>
+				<a class="spotify" href="https://open.spotify.com/artist/3MATPJ9tYbcMhw5VOZrRU6" target="_blank"></a>
+			</div>
+		</aside>
 		
 		<div style="text-align: center;">
 			<br>

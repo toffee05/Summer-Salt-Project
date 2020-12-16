@@ -35,6 +35,7 @@ body{
 	margin: 0;
 	background-color: #EBECF0;
 	transition: margin-left .5s;
+	position: relative;
 	
 }
 
@@ -133,7 +134,7 @@ a {
 
 .openbtn {
 	position: fixed;
-	top: 0;
+	top: 0px;	
 	height: 70px;
 	width: 70px;
 	background-color: #1f2024;
@@ -147,9 +148,75 @@ a {
 	border-left: none;
 	border-radius: 0 0 15px 0;
 	font-weight: bold;
-	float: left;
 	z-index: 1;
 	outline: none;
+}
+
+aside {
+	position: fixed;
+	right: 0;
+	float: right;
+	width: 70px;
+	max-height: 0;
+	text-align: center;
+	background-color: #EBECF0;
+	overflow: hidden;
+	z-index: 2;
+	border-radius: 0 0 30px 30px;
+	transition: border-radius .2s;
+	transition: max-height .3s;
+	
+}
+
+.socMedSprite {
+	text-align: center;
+	border: 3px solid #4B4B4B;
+	border-radius: 0 0 30px 30px;
+	transition: border-radius .2s;
+}
+
+.openbtnSprite {
+	position: fixed;
+	top: 0px;
+	right: 0;
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background-color: #1f2024;
+	font-size: 20px;
+	cursor: pointer;
+	color: white;
+	padding: 10px 15px;
+	border-top: none;
+	border-left: 3px solid #4B4B4B;
+	border-bottom: 3px solid #4B4B4B;
+	border-right: none;
+	border-radius: 0 0 0 15px;
+	outline: none;
+	z-index: 1;
+	transition: border-radius .2s;
+}
+
+.socMedSprite > a {
+	text-decoration: none;
+	display: inline-block;
+	background-image: url('../images/css_sprites.png');
+}
+
+.youtube {
+	width: 50px; height: 36px;
+    background-position: -0 -0;
+	margin-top: 5px;
+}
+
+.twitter {
+    width: 50px; height: 50px;
+    background-position: -0px -36px;
+}
+
+.spotify {
+    width: 50px; height: 50px;
+    background-position: -0 -86px;
 }
 
 #header2 {
