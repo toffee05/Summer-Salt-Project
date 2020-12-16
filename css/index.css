@@ -162,16 +162,16 @@ aside {
 	background-color: #EBECF0;
 	overflow: hidden;
 	z-index: 2;
-	border-radius: 0 0 30px 30px;
+	border-radius: 15px 0 30px 30px;
 	transition: border-radius .2s;
-	transition: max-height .3s;
+	transition: max-height .2s;
 	
 }
 
 .socMedSprite {
 	text-align: center;
 	border: 3px solid #4B4B4B;
-	border-radius: 0 0 30px 30px;
+	border-radius: 15px 0 30px 30px;
 	transition: border-radius .2s;
 }
 
