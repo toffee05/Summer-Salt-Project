@@ -98,6 +98,8 @@ a {
 
 .sidebar .dropdown {
 	display: block;
+	max-height: 100px;
+	height: 100%;
 }
 
 #dropbtn {
@@ -110,7 +112,7 @@ a {
 }
 
 .sidebar .dropdown:hover .dropdown-content {
-	max-height: 500px;
+	max-height: 700px;
 }
 
 .sidebar .dropdown .dropdown-content a{
