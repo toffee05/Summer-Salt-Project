@@ -72,7 +72,7 @@ a {
 	border-right: 3px solid #4B4B4B;
 }
 
-.sidebar a{
+.sidebar a, h1{
 	padding: 0.8vw 2vw;
 	display: block;
 	text-align: center;
@@ -104,6 +104,8 @@ a {
 
 #dropbtn {
 	display: block;
+	font-weight: bold;
+	letter-spacing: 1px;
 }
 
 .sidebar .dropdown .dropdown-content {
@@ -935,9 +937,8 @@ aside {
 }
 
 .circleCont {
-	display: block;
-	height: 30px;
-	width: 30px;
+	height: 40px;
+	width: 40px;
 	margin: auto;
 	margin-bottom: 30px;
 	text-align: center;
