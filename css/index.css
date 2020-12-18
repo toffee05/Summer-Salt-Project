@@ -81,7 +81,6 @@ a {
 	text-decoration: none;
 	transition: color .07s;
 	color: #CCCCCC;
-	border: 1px solid black;
 }
 
 .sidebar a:hover:not(.active) {
